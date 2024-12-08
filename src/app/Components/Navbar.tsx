@@ -58,10 +58,10 @@ export default function Navbar() {
               <Link href={"/About"}>About</Link>
             </li>
             <li className='text-[#737373] hover:underline font-bold'>
-              <Link href={"/"}>Contact</Link>
+              <Link href={"/Contact"}>Contact</Link>
             </li>
             <li className='text-[#737373] hover:underline font-bold'>
-              <Link href={"/"}>Pages</Link>
+              <Link href={"/Pages"}>Pages</Link>
             </li>
           </ul>
         </div>
