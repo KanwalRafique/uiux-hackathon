@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Universe() {
   return (
@@ -8,10 +9,12 @@ export default function Universe() {
         {/* Hero Background positioned with some space from the left and top */}
         <div className="flex-shrink-0 ml-10 relative">
           {/* Background Image with hover effect */}
-          <img
+          <Image
             src="/asian-woman.png"
             alt="Background"
-            className="w-[704px] h-[682px] object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-500"
+            width={704}
+            height={682}
+            className="object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-500"
           />
           {/* Subtle floating effect */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-20 hover:opacity-30 transition-opacity duration-500 rounded-xl"></div>

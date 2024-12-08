@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -6,10 +7,12 @@ export default function Hero() {
       {/* Shared Container */}
       <div className="w-full relative min-h-screen">
         {/* Hero Background */}
-        <img
+        <Image
           src="/bg-girl.jpg"
           alt="Hero Background"
-          className="w-full h-full object-cover brightness-75 hover:brightness-90 transition-all duration-500"
+          layout="fill"
+          objectFit="cover"
+          className="brightness-75 hover:brightness-90 transition-all duration-500"
         />
         {/* Overlay Text */}
         <div className="absolute inset-0 flex flex-col justify-center items-start gap-6 pl-16 max-w-[1440px] mx-auto">

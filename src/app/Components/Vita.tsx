@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Vita() {
   return (
@@ -6,11 +7,15 @@ export default function Vita() {
       {/* Shared Container */}
       <div className="w-full relative h-[100vh] bg-[#23856D]">
         {/* Hero Background positioned with some space from the right and bottom */}
-        <img
-          src="/white-shirt.png"
-          alt="Background"
-          className="absolute right-[10%] bottom-[5%] top-[20%] w-[443px] h-[585px] object-cover"
-        />
+        <div className="absolute right-[10%] bottom-[5%] top-[20%]">
+          <Image
+            src="/white-shirt.png"
+            alt="Background"
+            width={443}
+            height={585}
+            className="object-cover"
+          />
+        </div>
         {/* Overlay Text */}
         <div className="absolute inset-0 flex flex-col justify-center items-start gap-4 pl-16 max-w-[1440px] mx-auto">
           {/* SUMMER 2020 */}
