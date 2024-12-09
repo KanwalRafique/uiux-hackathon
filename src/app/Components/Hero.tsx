@@ -10,8 +10,8 @@ export default function Hero() {
         <Image
           src="/bg-girl.jpg"
           alt="Hero Background"
-          layout="fill"
-          objectFit="cover"
+          fill // Replaces layout="fill"
+          style={{ objectFit: 'cover' }} // Replaces objectFit="cover"
           className="brightness-75 hover:brightness-90 transition-all duration-500"
         />
         {/* Overlay Text */}
